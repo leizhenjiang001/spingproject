@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "name": "person",
+      "type": "org.bean.Person",
+      "sourceType": "org.bean.Person"
+    },
+    {
+      "name": "school",
+      "type": "org.example.config.School",
+      "sourceType": "org.example.config.School"
+    }
+  ],
+  "properties": [
+    {
+      "name": "school.name",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.School"
+    },
+    {
+      "name": "school.websit",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.School"
+    }
+  ],
+  "hints": []
+}

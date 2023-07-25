@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>springboot1</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>19</maven.compiler.source>
+        <maven.compiler.target>19</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <dependencies>
+
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-parent</artifactId>
+            <version>2.7.3</version>
+            <type>pom</type>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <version>2.7.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>2.7.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+        <!--
+      加了这个依赖spring和springMVC那些jar包就都有了
+       -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.7.3</version>
+        </dependency>
+        <!-- 数据库驱动依赖 -->
+
+        <!--
+      <dependency>
+          <groupId>org.postgresql</groupId>
+          <artifactId>postgresql</artifactId>
+          <version>42.2.18</version>
+      </dependency>
+       -->
+        <!-- 数据库驱动 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.32</version>
+        </dependency>
+
+
+        <!-- 数据库连接池 -->
+        <!--
+      <dependency>
+          <groupId>com.alibaba</groupId>
+          <artifactId>druid</artifactId>
+          <version>1.0.27</version>
+      </dependency>
+      -->
+
+        <!--  -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.1.3</version>
+        </dependency>
+
+        <!-- 添加mybatis-plus插件-->
+
+        <!--
+       <dependency>
+           <groupId>com.baomidou</groupId>
+           <artifactId>mybatis-plus-boot-starter</artifactId>
+           <version>3.4.2</version>
+       </dependency>
+        -->
+
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+            <version>2.7.3</version>
+        </dependency>
+
+    </dependencies>
+    <!--
+    IntelliJ Idea 规定所有java文件在java文件夹里， 所有的配置文件在resources里
+    但是mybatis又定义mapper的DAO接口和映射文件Mapper.xml得放在一起
+    StudentMapper.xml没有被编译，因为这个映射文件写到了java文件夹里面了，而java文件夹里面里只能编译.java文件
+    mybatis规定只有编译的时候在一个文件夹里就行了,StudentMapper.xml存放位置有两种
+    方法1:手动指定文件夹为resources,需要把这个java文件夹也变成资源文件夹resources
+         将Mapper接口和Mapper映射文件存放到src/main/java同一目录下
+    方法2:搬家 把src/main/java/org/example/mapper/StudentMapper.xml
+         搬到  src/main/resources/mapper/StudentMapper.xml
+         在配置文件application.properties中指定mybatis映射文件的路径,最终编译后还会和StudentMapper.java在一起
+         (都在编译后的classes文件下),StudentMapper.java就能找到对应的sql语句
+    -->
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.yml</include>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+
+
+        <plugins>
+            <!-- 这个插件，可以将应用打包成一个可执行jar包-->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.7.3</version>
+            </plugin>
+        </plugins>
+    </build>
+    <!--
+    maven规定java文件夹里只能放.java文件,不是.java文件不会被编译进去的
+    resources就是类路径classpath,resources这里的文件肯定会被编译进去(相当于非maven工程时创建web工程的src(类路径classpath)
+    ,配置文件都应该放到里面)
+    为什么maven会这么规定呢？因为不同的开发工具最终创建的web项目其实目录结构都是不一样的，所以maven就
+    直接干脆就定了这么一套目录结构，这个目录结构它不依赖某个开发工具(elipse,myeclipse,idea创建的web项目其实目录结构都是不一样的)
+    所以只要你是maven工程目录结构都是一样的
+    -->
+</project>

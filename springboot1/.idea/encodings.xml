@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../springboot-dubbo-cunsumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../springboot-dubbo-cunsumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../springboot-dubbo-interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../springboot-dubbo-interface/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../springboot-dubbo-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../springboot-dubbo-provider/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../springboot-dubbo-ssm-consumer/springboot-dubbo-ssm-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../springboot-dubbo-ssm-consumer/springboot-dubbo-ssm-consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../springboot-dubbo-ssm-interface/springboot-dubbo-ssm-interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../springboot-dubbo-ssm-interface/springboot-dubbo-ssm-interface/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../springboot-dubbo-ssm-provider/springboot-dubbo-ssm-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../springboot-dubbo-ssm-provider/springboot-dubbo-ssm-provider/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../springboot-dubbo1-interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../springboot-dubbo1-interface/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../springboot-test1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../springboot-test1/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

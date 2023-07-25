@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot-dubbo/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot-dubbo-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot-dubbo-cunsumer/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot-dubbo-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot-dubbo1-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot-test1/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot-dubbo-ssm-interface/springboot-dubbo-ssm-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot-dubbo-ssm-provider/springboot-dubbo-ssm-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot-dubbo-ssm-consumer/springboot-dubbo-ssm-consumer/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="19" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
